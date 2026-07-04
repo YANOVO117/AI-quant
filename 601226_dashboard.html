@@ -76,10 +76,41 @@ body {
 .chart-title {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     color: #1a1a2e;
     border-left: 4px solid #e74c3c;
     padding-left: 10px;
+}
+.figure-label {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.chart-subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+.analysis-box {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.7;
+}
+.analysis-box .analysis-title {
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 .chart-row {
     display: grid;
@@ -159,30 +190,60 @@ body {
 </div>
 
 <div class="kline-wrapper">
+    <div class="figure-label">图 1</div>
     <div class="chart-title">K线图 & 成交量</div>
+    <div class="chart-subtitle">展示华电科工2025年7月至2026年7月的日K线走势及成交量变化，包含MA5/MA10/MA20/MA60均线</div>
     <div id="kline-chart"></div>
     <div id="volume-chart"></div>
+    <div class="analysis-box">
+        <div class="analysis-title">📊 数据分析</div>
+        <div><b>期间走势</b>：累计涨跌幅+7.19%，整体呈上涨趋势。<br><b>波动情况</b>：日均波动率约3.08%，最大回撤50.43%。<br><b>近期表现</b>：近20个交易日收益率-11.71%。<br><b>均线结构</b>：最新收盘价6.56元，MA5=6.44，MA10=6.64，MA20=6.85。</div>
+    </div>
 </div>
 
 <div class="chart-row">
     <div class="chart-container">
+        <div class="figure-label">图 2</div>
         <div class="chart-title">市盈率 PE (TTM)</div>
+        <div class="chart-subtitle">反映华电科工当前估值水平，对比历史PE分位数判断高估或低估</div>
         <div id="pe-chart"></div>
+        <div class="analysis-box">
+            <div class="analysis-title">📈 数据分析</div>
+            <div><b>当前PE</b>：48.7倍，处于历史区间的2%分位数位置。<br><b>估值评估</b>：PE 较低，估值偏低。<br><b>趋势判断</b>：近期PE呈下降或平稳趋势。</div>
+        </div>
     </div>
     <div class="chart-container">
+        <div class="figure-label">图 3</div>
         <div class="chart-title">市净率 PB</div>
+        <div class="chart-subtitle">反映华电科工净资产估值水平，PB&lt;1表示跌破净资产</div>
         <div id="pb-chart"></div>
+        <div class="analysis-box">
+            <div class="analysis-title">📈 数据分析</div>
+            <div><b>当前PB</b>：1.75倍，处于历史区间的4%分位数位置。<br><b>净资产估值</b>：PB>1，股价高于净资产。<br><b>趋势判断</b>：近期PB呈下降或平稳趋势。</div>
+        </div>
     </div>
 </div>
 
 <div class="chart-row">
     <div class="chart-container">
+        <div class="figure-label">图 4</div>
         <div class="chart-title">换手率 (%)</div>
+        <div class="chart-subtitle">反映股票流动性与交易活跃度，换手率高说明市场关注度高</div>
         <div id="turnover-chart"></div>
+        <div class="analysis-box">
+            <div class="analysis-title">📊 数据分析</div>
+            <div><b>平均换手率</b>：2.49%，换手率中等。<br><b>近期变化</b>：近20日平均换手率1.44%，较整体均值下降。<br><b>流动性评估</b>：流动性一般。</div>
+        </div>
     </div>
     <div class="chart-container">
+        <div class="figure-label">图 5</div>
         <div class="chart-title">总市值 (亿元)</div>
+        <div class="chart-subtitle">反映华电科工整体市场规模变化，跟踪公司价值趋势</div>
         <div id="mv-chart"></div>
+        <div class="analysis-box">
+            <div class="analysis-title">📊 数据分析</div>
+            <div><b>市值规模</b>：最新总市值76.2亿元，期间市值增长6.87%。<br><b>变化趋势</b>：近期市值波动较大。<br><b>规模评估</b>：属于小盘股。</div>
+        </div>
     </div>
 </div>
 
