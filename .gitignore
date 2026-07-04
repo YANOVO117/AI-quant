@@ -4,3 +4,8 @@
 # 临时文件
 _check*.js
 *.tmp
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
